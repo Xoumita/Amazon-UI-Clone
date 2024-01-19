@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    font-family: arial;
+    border: border-box;
+}
+body{
+    background-color: #e1e1e1;
+}
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+/* box 1 */
+.nav-logo{
+    height: 50px;
+    width: 100px;
+    margin: 3px;
+}
+.logo{
+    background-image: url("item_img/amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+/* box 2 */
+.nav-address{
+    height: 50px;
+    width: 80px;
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.add-fst{
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+.add-sec{
+    font-size: 1rem;
+    margin-left: 3px;
+    font-weight: bold;
+}
+/* box 3 */
+.nav-search{
+    margin: 3px;
+    height: 45px;
+    width: 700px;
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-search:hover{
+    border: 4px solid orange;
+    border-radius: 12px;
+}
+.search-select{
+    background-color: #f3f3f3;
+    height: 45px;
+    width: 55px;
+    border-radius:6px 0px 0px 6px ;
+    text-align: center;
+    border: none;
+}
+.search-input{
+    width: 100%;
+    height: 42px;
+    font-size: 1rem;
+    border: none;
+}
+.search-icon{
+    height: 45px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 6px 6px 0px;
+    background-color: orange;
+    font-size: 1.2rem;
+    color: #0f1111;
+}
+/* box 4 */
+.nav-lan{
+    height: 50px;
+    width: 70px;
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lan-select{
+    margin-top: 13px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+/* box 5 & 6 */
+.nav-list{
+    height: 50px;
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: orange;
+}
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+  
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+.fst-p{
+    font-size: 0.85rem;
+    color: #cccccc;
+}
+.sec-p{
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+/* box 7 */
+.nav-cart{
+    height: 50px;
+    width: 70px;
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-cart i{
+    font-size: 30px;
+}
+.cart{
+    margin-top: 15px;
+}
+
+/* panel */
+.panel{
+    height: 42px;
+    padding: 0px 20px 0px 20px;
+    background-color: #222f30;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.panel-all{
+    height: 38px;
+    width: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.panel-all p{
+    padding-left: 5px;
+}
+.panel-options{
+    width: 70%;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.panel-options p{
+    padding: 10px;
+    margin: 0px 5px 0px 5px;
+}
+
+/* hero section */
+.HERO-section{
+    background-image: url("item_img/hero_image.jpg");
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.HERO-msg{
+    height: 40px;
+    width: 95%;
+    margin-bottom: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.HERO-msg a{
+    color: #0081fa;
+    text-decoration: none;
+}
+.HERO-msg a:hover{
+    color: rgb(230, 75, 3);
+}
+
+/* shop secction */
+.shop-section{
+
+    /* height: 450px;
+    width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+}
+.box{
+    height: 400px;
+    width: 23%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+
+}
+.box h1{
+    font-size: 1.2rem;
+    padding-top: 15px;
+}
+.box-content{
+    margin: 0rem 1rem 0rem 1rem;
+}
+.box-content a{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #0081fa;
+}
+.box-content a:hover{
+    color: red;
+}
+.box-img{
+    height: 300px;
+    margin: 1rem 0rem 1rem 0rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* sign up */
+.signup{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signup-content{
+    width: 100%;
+    height: 70%;
+    border: 1px solid #b6b6b6;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+.signup-content p{
+    font-size: 0.8rem;
+}
+.signup-content button{
+    width: 200px;
+    height: 30px;
+    background-color: orange;
+    font-weight: bold;
+    border: 1px solid #ff9d00;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+}
+.signup-content a{
+    color: #0081fa;
+}
+/* footer */
+/* foot-panel1 */
+.foot-panel1{
+    height: 50px;
+    background-color: #37475a;
+    color: white;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* foot-panel2 */
+.foot-panel2{
+    height: 300px;
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center
+    
+}
+.foot-panel2-content{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+ul p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+ul a{
+    text-decoration: none;
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #cccccc;
+}
+/* foot panel 3 */
+.foot-panel3{
+    height: 100px;
+    background-color:#222f3d;
+    border-top: 0.3px solid #3e4752;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.content-div{
+    display: flex;
+    flex-direction: row;
+
+}
+.foot-panel3-content{
+    color: #a4a4a4;
+    border: 1px solid #a4a4a4;
+    padding: 15px;
+    display: flex;
+    margin: 0px 10px 0px 10px;
+}
+.foot-panel3-content p{
+    margin-left: 5px;
+}
+.foot-panel3-content select{
+    background-color: transparent;
+    border: none;
+    color: #a4a4a4;
+}

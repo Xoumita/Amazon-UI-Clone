@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up / log in</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+            <img src="amazon.png" alt="logo">
+            <p>.com</p>
+        </div>
+        <div class="container">
+            <h1>Create Account</h1>
+            <form id="signupForm">
+                <div class="name">
+                    <p>Your name</p>
+                    <input type="text" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="number">
+                    <p>Mobile number</p>
+                    <input type="text" id="mobile" placeholder="Mobile number">
+                </div>
+                <div class="email">
+                    <p>Email</p>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="pwd">
+                    <p>Password</p>
+                    <input type="password" id="password" placeholder="Create a new password">
+                </div>
+                <button type="button" onclick="checkPassAndSave();">Continue</button>
+                <label for="msg" id="msg"></label>
+            </form>
+        </div>
+    </div>
+
+    <script  type="text/javascript">
+        function checkPassAndSave(){
+            let name = document.getElementById('name').value;
+            let mobile = document.getElementById('mobile').value;
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+
+            // Check password strength
+            let plen = password.length;
+            if(plen < 6){
+                document.getElementById('msg').style.color = 'red';
+                document.getElementById('msg').innerHTML = 'Password is weak';
+            } else if(plen >= 6 && plen < 10){
+                document.getElementById('msg').style.color = 'yellow';
+                document.getElementById('msg').innerHTML = 'Password is medium';
+            } else {
+                document.getElementById('msg').style.color = 'green';
+                document.getElementById('msg').innerHTML = 'Password is strong & Account created';
+
+                // Save the user information in local storage
+                let userInfo = {
+                    name: name,
+                    mobile: mobile,
+                    email: email,
+                    password: password
+                };
+                localStorage.setItem('userInfo', JSON.stringify(userInfo));
+            }
+        }
+    </script>
+</body>
+</html>

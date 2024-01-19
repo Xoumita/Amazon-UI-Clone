@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    font-family: arial;
+    border: border-box;
+}
+body{
+    background-color: #e1e1e1;
+}
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+/* box 1 */
+.nav-logo{
+    height: 50px;
+    width: 100px;
+    margin: 3px;
+}
+.logo{
+    background-image: url("img/amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+/* box 2 */
+.nav-address{
+    height: 50px;
+    width: 80px;
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.add-fst{
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+.add-sec{
+    font-size: 1rem;
+    margin-left: 3px;
+    font-weight: bold;
+}
+/* box 3 */
+.nav-search{
+    margin: 3px;
+    height: 45px;
+    width: 700px;
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-search:hover{
+    border: 4px solid orange;
+    border-radius: 12px;
+}
+.search-select{
+    background-color: #f3f3f3;
+    height: 45px;
+    width: 55px;
+    border-radius:6px 0px 0px 6px ;
+    text-align: center;
+    border: none;
+}
+.search-input{
+    width: 100%;
+    height: 42px;
+    font-size: 1rem;
+    border: none;
+}
+.search-icon{
+    height: 45px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 6px 6px 0px;
+    background-color: orange;
+    font-size: 1.2rem;
+    color: #0f1111;
+}
+/* box 4 */
+.nav-lan{
+    height: 50px;
+    width: 70px;
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lan-select{
+    margin-top: 13px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+/* box 5 & 6 */
+.nav-list{
+    height: 50px;
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: orange;
+}
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+  
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+.fst-p{
+    font-size: 0.85rem;
+    color: #cccccc;
+}
+.sec-p{
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+/* box 7 */
+.nav-cart{
+    height: 50px;
+    width: 70px;
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-cart i{
+    font-size: 30px;
+}
+.cart{
+    margin-top: 15px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 80%;
+    margin: 20px;
+}
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+.bill {
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f5f5f5;
+} 
